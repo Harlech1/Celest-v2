@@ -9,9 +9,31 @@ import SwiftUI
 
 @main
 struct Celest_v2App: App {
+    let persistenceController = PersistenceController.shared
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if UserDefaults.standard.bool(forKey: "hasCompletedOnboarding") {
+                TabView {
+                    HomeView()
+                        .tabItem {
+                            Label("Home", systemImage: "house.lodge")
+                        }
+                    
+                    WaterLogView()
+                        .tabItem {
+                            Label("Water", systemImage: "drop.fill")
+                        }
+                    
+                    SettingsView()
+                        .tabItem {
+                            Label("Settings", systemImage: "gear")
+                        }
+                }
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            } else {
+                FirstOnboardingView()
+            }
         }
     }
 }

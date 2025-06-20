@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
+    <key>UIAppFonts</key>
+    <array>
+        <string>SeriouslyNostalgic-Regular.otf</string>
+        <string>SeriouslyNostalgic-Condensed.otf</string>
+        <string>SeriouslyNostalgic-SemiCond.otf</string>
+        <string>SeriouslyNostalgic-ExtraCond.otf</string>
+        <string>SeriouslyNostalgic-UltraCond.otf</string>
+        <string>SeriouslyNostalgicItal-Reg.otf</string>
+        <string>SeriouslyNostalgicItal-Cond.otf</string>
+        <string>SeriouslyNostalgicItal-SmCn.otf</string>
+        <string>SeriouslyNostalgicItal-UCn.otf</string>
+        <string>SeriouslyNostalgicItal-XCn.otf</string>
+    </array>
+</dict>
+</plist>
+
